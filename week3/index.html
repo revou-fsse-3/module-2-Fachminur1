@@ -45,23 +45,100 @@
         <main>
             <div class="question">
                 <div class="question1">
-                    <h2>What is wonderful world group?</h2>
+                    <h3>What is wonderful world group?</h3>
                     <p>We are a proud community of travelers that will provide you with information of beautiful places</p>
                 </div>
                 <div class="question2">
-                    <h2>What is the purpose?</h2>
+                    <h3>What is the purpose?</h3>
                     <p>As we said, we provide information about beautiful places around the earth</p>
                 </div>
                 <div class="question3">
-                    <h2>How does it work?</h2>
-                    <p>We will choose 5 destination every 4 months and provide the information there</p>
+                    <h3>How does it work?</h3>
+                    <p>We will choose destinations once in a full year and provide the information there</p>
                 </div>
             </div>
 
+            <div class="placelist">
+                <p>Here are the five lists of this year</p>
+            </div>
 
-
-
-            <div class="images">
+            <div class="maincontent">
+                <!-- SIDEBAR -->
+                <aside>
+                    <p>Years Lists</p>
+                    <p style="background-color: black; color: grey;" >2015</p>
+                    <ul style="color: white;" >
+                        <li>White House</li>
+                        <li>Nevada</li>
+                        <li>Goodsprings</li>
+                        <li>New Vegas</li>
+                        <li>Primm</li>
+                        <li>Mojave</li>
+                        <li>Oliver dam</li>
+                        <li>Novac</li>
+                        <li>Zion</li>
+                        <li>Sierra Madre</li>
+                        <li>The Tops</li>
+                        <li>Gommorah</li>
+                        <li>Lukcy 38</li>
+                    </ul>
+                    <p style="background-color: black; color: grey;" >2016</p>
+                    <ul>
+                        <li>Bone County</li>
+                        <li>Las Venturas</li>
+                        <li>San Fierro</li>
+                        <li>Los Santos</li>
+                        <li>Easter Basin</li>
+                        <li>Angel Pine</li>
+                        <li>Arco Oestre</li>
+                        <li>Fort Carson</li>
+                        <li>Hampsire</li>
+                        <li>Junniper Hill</li>
+                        <li>Kings Road</li>
+                        <li>Queens Gambit</li>
+                        <li>El Dorado</li>
+                    </ul>
+                    <p style="background-color: black; color: grey;" >2017</p>
+                    <ul style="color: white;" >
+                        <li>Nevada</li>
+                        <li>Utah</li>
+                        <li>Mojave</li>
+                        <li>Fort Whill</li>
+                        <li>Palomino</li>
+                        <li>New Vegas</li>
+                        <li>Tucson</li>
+                        <li>Chinatown</li>
+                        <li>Carlton</li>
+                        <li>Remington</li>
+                        <li>Point Nemo</li>
+                        <li>Kurgan</li>
+                        <li>Wendy-go</li>
+                    </ul>
+                    <p style="background-color: black; color: grey;" >2018</p>
+                    <ul>
+                        <li>Oceanside</li>
+                        <li>Las Brujas</li>
+                        <li>Palisade</li>
+                        <li>Paradiso</li>
+                        <li>Old Venturas</li>
+                        <li>Kincaid</li>
+                        <li>Last Dime</li>
+                        <li>Moreno</li>
+                        <li>Mike's</li>
+                        <li>TMNT</li>
+                        <li>Gotham</li>
+                        <li>Qwikbonds</li>
+                        <li>Bermuda</li>
+                    </ul>
+                    <p style="background-color: black; color: grey;" >2019</p>
+                    <ul style="color: white;" >
+                        <li>Lindenside</li>
+                        <li>Salford</li>
+                        <li>Sherman Dam</li>
+                        
+                    </ul>
+                </aside>
+                <!-- SIDEBAR -->
                     <!-- MORAINE LAKE -->
                     <div class="morainelakepic">
                         <p class="textinformation" onclick="moraine_lake()" style="text-align: center;">1. Moraine Lake</p>
@@ -121,39 +198,43 @@
 
 
 
-            <div class="information">
+            
                 <h2 style="text-align: center;">We can provide you information about those places and how to get there</h2>
-                <fieldset>
-                    <legend>Personal information:</legend>
-                    <label for="fname">First name:</label>
-                    <input type="text" id="fname" name="fname"><br><br>
-                    <label for="lname">Last name:</label>
-                    <input type="text" id="lname" name="lname"><br><br>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email"><br><br>
-                    <label for="birthday">Birthday:</label>
-                    <input type="date" id="birthday" name="birthday"><br><br>
-                </fieldset>
-                <fieldset>
-                    <legend>Places to go:</legend>
-                    <label for="places">Select one of the places</label>
-                            <select>
-                                <option label="Moraine lake">Moraine Lake</option>
-                                <option label="Salar de Uyuni">Salar de Uyuni</option>
-                                <option label="Santorini Island">Santorini Island</option>
-                                <option label="Angkor Wat">Angkor Wat</option>
-                                <option label="Great Barrier Reef">Great Barrier Reef</option><br><br>
-                            </select><br><br>
-                    <label for="Departure">Departure:</label>
-                                <input type="date"><br><br>
-                    <label for="places">Modes of transportation</label>
-                            <select>
-                                <option label="Air">Air</option>
-                                <option label="Water">Water</option>
-                            </select><br><br>
-                            <button>Submit</button>
-                </fieldset>
-            </div>     
+                <form>
+                    <fieldset>
+                        <legend>Personal information:</legend>
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname" required><br><br>
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname" required><br><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+                        <label for="birthday">Birthday:</label>
+                        <input type="date" id="birthday" name="birthday" required><br><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Places to go:</legend>
+                        <label for="places">Select one of the places</label>
+                                <select>
+                                    <option label="Moraine lake">Moraine Lake</option>
+                                    <option label="Salar de Uyuni">Salar de Uyuni</option>
+                                    <option label="Santorini Island">Santorini Island</option>
+                                    <option label="Angkor Wat">Angkor Wat</option>
+                                    <option label="Great Barrier Reef">Great Barrier Reef</option><br><br>
+                                </select><br><br>
+                        <label for="Departure">Departure:</label>
+                                    <input type="date" required><br><br>
+                        <label for="places">Modes of transportation</label>
+                                <select>
+                                    <option label="Air">Air</option>
+                                    <option label="Water">Water</option>
+                                </select><br><br>
+                                <input type="radio" required>
+                                <label>I agree with Wonderful World Terms and Agreement</label>
+                                <input style="padding: 0% 40% 0% 40%;" value="Submit" type="submit">
+                    </fieldset>
+                </form>
+              
         </main>
         <!-- Akhir dari konten utama -->
 

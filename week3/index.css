@@ -101,22 +101,66 @@ main {
 /* CSS OF QUESTIONS */
 
 /* CSS OF MAIN CONTENT */
-.images {
+.maincontent {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    padding: 10% 5% 10% 5%;
-    row-gap: 3%;
-    column-gap: 5%;
-    margin-bottom: 5%;
+    grid-template-columns: 0.5fr 0.5fr 1fr 1fr;
+    grid-template-rows: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr;
+    padding: 0% 1% 0% 0%;
+    row-gap: 2.5%;
+    column-gap: 2.5%;
+    margin-bottom: 3%;
+    margin-top: 2%;
     
 }
+/* ANIMATION CSS */
+.placelist {
+    position: relative;
+    
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 50%;
+    font-size: 250%;
+    animation-name: list ;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+  @keyframes list {
+  0%   {left:0%;}
+  20%  {left:50%;}
+  40%  {left:67%;}
+  60%  {left:67%;}
+  80%  {left:50%;}
+  100% {left:0%;}
+  }
+/* ANIMATION CSS */
+
+/* SIDEBAR CSS */
+aside {
+    grid-column:1 ;
+    grid-row: 1/ span 5;
+    background-color: grey;
+    text-align: center;
+    margin-bottom: 0;
+}
+ul {
+    padding-left: 20%;
+}
+
+li:hover {
+    color: yellow;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 1s;
+}
+/* SIDEBAR CSS */
+
     /* MORAINE LAKE CSS */
 .morainelakepic {
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-column: 1;
+    grid-column: 2;
     grid-row: 1;
     width: 100%;
     height: 100%; 
@@ -152,10 +196,10 @@ main {
 
 .morainelakeinformation {
     grid-row: 1;
-    grid-column: 2 / span 3;
+    grid-column: 3 / span 4;
     text-align: center;
     align-items: center;
-    padding: 10% 10% 10% 10%;
+    padding: 3% 2% 3% 2%;
     background-color: rgba(0, 0, 0, 0.2);
     border: 5px solid grey;
     border-radius: 5%;
@@ -164,7 +208,7 @@ main {
 
     /* SALAR DE UYUNI CSS */
 .salardeuyunipic {
-    grid-column: 3;
+    grid-column: 5;
     grid-row: 2;
     display: flex;
     justify-content: center;
@@ -202,10 +246,10 @@ main {
 
 .salardeuyuniinformation {
     grid-row: 2;
-    grid-column: 1 / span 2;
+    grid-column: 2 / span 3;
     text-align: center;
     align-items: center;
-    padding: 10% 10% 10% 10%;
+    padding: 3% 2% 3% 2%;
     background-color: rgba(0, 0, 0, 0.2);
     border: 5px solid grey;
     border-radius: 5%;
@@ -214,7 +258,7 @@ main {
 
     /* SANTORINI ISLAND CSS */
 .santoriniislandpic {
-    grid-column: 1;
+    grid-column: 2;
     grid-row: 3;
     display: flex;
     justify-content: center;
@@ -252,10 +296,10 @@ main {
 
 .santoriniislandinformation {
     grid-row: 3;
-    grid-column: 2 / span 3;
+    grid-column: 3 / span 4;
     text-align: center;
     align-items: center;
-    padding: 10% 10% 10% 10%;
+    padding: 3% 2% 3% 2%;
     background-color: rgba(0, 0, 0, 0.2);
     border: 5px solid grey;
     border-radius: 5%;
@@ -264,7 +308,7 @@ main {
 
     /* ANGKOR WAT CSS */
 .angkorwatpic {
-    grid-column: 3;
+    grid-column: 5;
     grid-row: 4;
     display: flex;
     justify-content: center;
@@ -302,10 +346,10 @@ main {
 
 .angkorwatinformation {
     grid-row: 4;
-    grid-column: 1 / span 2;
+    grid-column: 2 / span 3;
     text-align: center;
     align-items: center;
-    padding: 10% 10% 10% 10%;
+    padding: 3% 2% 3% 2%;
     background-color: rgba(0, 0, 0, 0.2);
     border: 5px solid grey;
     border-radius: 5%;
@@ -314,7 +358,7 @@ main {
 
     /* GREAT BARRIER REEF CSS */
 .greatbarrierreefpic {
-    grid-column: 1;
+    grid-column: 2;
     grid-row: 5;
     display: flex;
     justify-content: center;
@@ -353,10 +397,10 @@ main {
 
 .greatbarrierreefinformation {
     grid-row: 5;
-    grid-column: 2 / span 3;
+    grid-column: 3 / span 4;
     text-align: center;
     align-items: center;
-    padding: 10% 10% 10% 10%;
+    padding: 3% 2% 3% 2%;
     background-color: rgba(0, 0, 0, 0.2);
     border: 5px solid grey;
     border-radius: 5%;
@@ -383,26 +427,29 @@ button {
 h2 {
     margin: auto;
     padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: grey;
 }
 /* CSS OF MAIN CONTENT */
 
 
 
 /* CSS OF INFORMATION AND FORM */
-.information{
-    background-color: rgb(174, 179, 184);
-    margin-top: 0;
-}
 
-fieldset {
+form {
     padding-left: 50%;
     padding-right: 50%;
+    display: grid;
     align-items: center;
     padding: 8px;
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
     background-image: url(./assets/mountainnavigationbar.jpg);
+}
+
+fieldset {
+    padding-left: 10%;
 }
 /* CSS OF INFORMATION AND FORM */
 
@@ -454,35 +501,122 @@ footer {
 @media only screen and (max-width: 600px) {
 
     
-    .images {
-        display: flex;
-        flex-direction: column;
-        padding: 10% 10% 10% 10%;
+    .maincontent {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+        
     }
+    
+    .morainelakepic {
+        margin: auto;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .morainelakeinformation {
+        margin: auto;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        grid-row: 2;
+        grid-column: 1;
+        font-size: 80%;
+    }
+
+    .salardeuyunipic {
+        margin: auto;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    .salardeuyuniinformation {
+        margin: auto;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        grid-row: 4 ;
+        grid-column: 1;
+        font-size: 80%;
+    }
+
+    .santoriniislandpic {
+        grid-row: 5;
+        grid-column: 1;
+        margin: auto;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+    }
+
+    .santoriniislandinformation {
+        grid-row: 6;
+        grid-column: 1;
+        margin: auto;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        font-size: 80%;
+    }
+
+    .angkorwatpic {
+        margin: auto;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        grid-row: 7;
+        grid-column: 1;
+    }
+
+    .angkorwatinformation {
+        margin: auto;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        grid-row: 8;
+        grid-column: 1;
+        font-size: 80%;
+    }
+
+    .greatbarrierreefpic {
+        margin: auto;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        grid-row: 9;
+        grid-column: 1;
+    }
+
+    .greatbarrierreefinformation {
+        margin: auto;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        grid-row: 10;
+        grid-column: 1;
+        font-size: 80%;
+    }
+
+    aside {
+        display: none;
+    }
+
     .icon-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
-    .morainelakepic {
-        margin-top: 10%;
-        margin-bottom: 10%;
-    }
-    .salardeuyunipic {
-        margin-top: 10%;
-        margin-bottom: 10%;
-    }
-    .santoriniislandpic {
-        margin-top: 10%;
-        margin-bottom: 10%;
-    }
-    .angkorwatpic {
-        margin-top: 10%;
-        margin-bottom: 10%;
-    }
-    .greatbarrierreefpic {
-        margin-top: 10%;
-        margin-bottom: 10%;
-    }
+}
 
+@media only screen and (max-width: 750px) {
+    .placelist {
+        display: none;
+    }
 }
