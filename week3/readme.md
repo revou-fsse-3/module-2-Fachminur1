@@ -15,4 +15,4 @@ The deadline of this assignment is on Friday, 27th of October 2023. 23:25 GMT+7
 
 #### 3. The website
 
-https://comfy-parfait-0ead23.netlify.app/
+https://main--elegant-cactus-b44c90.netlify.app/
