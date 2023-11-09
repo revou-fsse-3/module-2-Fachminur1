@@ -29,3 +29,20 @@ function great_barrier_reef() {
       function community() {
         window.open("index2.html")
       }
+
+      function joinus() {
+        window.open("index2.html")
+      }
+
+      function login() {
+        window.open("index2.html")
+      }
+
+      function aboutus() {
+        window.open("index2.html")
+      }
+
+      const checkbox = document.getElementById("check")
+      checkbox.addEventListener("change", () => {
+      document.body.classList.toggle("dark")}
+      )

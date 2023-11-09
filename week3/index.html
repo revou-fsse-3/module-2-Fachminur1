@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="beautiful places where you can visit">
     <title>Wonderful world</title>
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image" href="./assets/qubyicon.jpeg">
@@ -21,7 +22,7 @@
             </div>
                  <!-- awal dari bagian navigasi paling atas -->
         <nav class="navigationbar">
-            <img class="icon" style="width: 30px; height: 30px;" src="./assets/hamburger.png">
+            <img class="icon" style="width: 30px; height: 30px;" src="./assets/hamburger.png" alt="hamburgermenu">
             <div class="leftnavigationbar">
                 <a onclick="home()">Home</a>
                 <a onclick="journey()">Journey</a>
@@ -29,9 +30,9 @@
                 
             </div>
             <div class="rightnavigationbar">
-                <a>Join us</a>
-                <a>Log in</a>
-                <a>About us</a>
+                <a onclick="joinus()" >Join us</a>
+                <a onclick="login()" >Log in</a>
+                <a onclick="aboutus()">About us</a>
                 
             </div>
             
@@ -43,6 +44,11 @@
 
         <!-- Awal dari Konten Utama -->
         <main>
+            <div class="toogle">
+                <p class="darkmodetext" >Light mode</p>
+                <input class="darkmode" type="checkbox" id="check">
+                <label for="check" class="darkmodebutton"></label>
+            </div>
             <div class="question">
                 <div class="question1">
                     <h3>What is wonderful world group?</h3>
@@ -196,7 +202,12 @@
             <div class="gallery">
                 <p class="gallerytext">Gallery</p>
                 <picture>
-                    <img class="gallery1" src="./assets/1.webp" alt="some place around the world">
+                    <img
+                     class="gallery1" 
+                     src="./assets/1.webp" 
+                     srcset="./assets/1.webp"
+                     sizes="(max-width: 800px) 480x, 800px"
+                     alt="some place around the world">
                     <img class="gallery2" src="./assets/2.webp" alt="some place around the world">
                     <img class="gallery3" src="./assets/3.webp" alt="some place around the world">
                     <img class="gallery4" src="./assets/4.webp" alt="some place around the world">

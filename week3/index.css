@@ -89,6 +89,61 @@ main {
     background-color: #b1c4cc ;
     
 }
+
+.darkmodetext {
+    font-family:"lora";
+    font-weight: 600;
+}
+
+.toogle {
+    width: 100%;
+    height: 20%;
+    background: rgb(70,65,145);
+    background: radial-gradient(circle, rgba(70,65,145,1) 0%, rgba(160,209,206,1) 38%, rgba(198,198,235,1) 68%, rgba(86,160,175,1) 89%);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.darkmodebutton {
+    background-color: white;
+    width: 70px;
+    height: 30px;
+    border-radius: 200px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.4s;
+}
+
+.darkmodebutton::before {
+    position: absolute;
+    content: '';
+    background-color: grey;
+    width: 30px;
+    height: 20px;
+    border-radius: 200px;
+    margin: 5px;
+    transition: 0.4s;
+}
+
+input:checked + .darkmodebutton {
+    background-color: lightblue;
+}
+
+input:checked + .darkmodebutton::before {
+    transform: translateX(30px);
+}
+
+.darkmode{
+    display: none;
+}
+
+body.dark {
+    background-color: #292c35;
+    color: white;
+}
+
+
 /* CSS OF INTRO */
 
 /* CSS OF QUESTIONS */
@@ -547,7 +602,7 @@ footer {
 }
 
 .icon-tp {
-    width: 100px;
+    width: 90px;
     height: 60px;
 }
 /* CSS OF FOOTER */
@@ -568,10 +623,8 @@ footer {
     }
 }
 
-
+/* For phone */
 @media only screen and (max-width: 800px) {
-
-    
     .maincontent {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
@@ -730,9 +783,12 @@ footer {
       }
 
 }
+/* For phone */
 
+/* Hamburger Menu */
 @media only screen and (max-width: 750px) {
     .placelist {
         display: none;
     }
 }
+/* Hamburger Menu */
